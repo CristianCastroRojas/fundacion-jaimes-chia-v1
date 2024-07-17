@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Jaimes Chía - Trabajando para la Comunidad</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="La Fundación Jaimes Chia se dedica a mejorar la calidad de vida de las personas más vulnerables de nuestra comunidad mediante el apoyo, recursos y programas que generan un impacto positivo y duradero. Encuentra aquí las últimas noticias sobre nuestros proyectos y actividades.">
+    <meta name="keywords"
+        content="Fundación Jaimes Chia, ayuda comunitaria, proyectos sociales, noticias, renovación de parques, mejoras viales, eventos comunitarios">
+    <meta name="author" content="Fundación Jaimes Chia">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Language" content="es" />
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fundacionjaimeschia.org/blog" />
+    <meta property="og:title" content="Fundación Jaimes Chia - Trabajando para la Comunidad" />
+    <meta property="og:description"
+        content="La Fundación Jaimes Chia se dedica a mejorar la calidad de vida de las personas más vulnerables de nuestra comunidad mediante el apoyo, recursos y programas que generan un impacto positivo y duradero. Encuentra aquí las últimas noticias sobre nuestros proyectos y actividades." />
+    <meta property="og:image"
+        content="https://fundacionjaimeschia.org/assets/images/Metatags/Fundacion_Jaimes_Chia.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="fundacionjaimeschia.org">
+    <meta property="twitter:url" content="https://fundacionjaimeschia.org/blog" />
+    <meta property="twitter:title" content="Fundación Jaimes Chia - Trabajando para la Comunidad" />
+    <meta property="twitter:description"
+        content="La Fundación Jaimes Chia se dedica a mejorar la calidad de vida de las personas más vulnerables de nuestra comunidad mediante el apoyo, recursos y programas que generan un impacto positivo y duradero. Encuentra aquí las últimas noticias sobre nuestros proyectos y actividades." />
+    <meta property="twitter:image"
+        content="https://fundacionjaimeschia.org/assets/images/Metatags/Fundacion_Jaimes_Chia.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fundacionjaimeschia.org/blog">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Stylesheet para Bootstrap framework -->
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Stylesheet para Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet para AOS Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Stylesheet para Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Hojas de estilo personalizadas -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media-querys.css" />
+</head>
+
+<body>
+
+    <!-- Inicio Barra de Navegación -->
+    <header id="navbar-componente"></header>
+    <!-- Fin Barra de Navegación -->
+
+    <!-- Inicio Barra de Redes Sociales -->
+    <div id="social-componente"></div>
+    <!-- Fin Barra de Redes Sociales -->
+
+    <main>
+        <!-- Inicio de Sesión de Blog -->
+        <section class="blog-seccion">
+            <div class="container">
+                <div class="row align-items-center mt-4">
+                    <!-- Título y subtítulo -->
+                    <div class="col-12 text-center animate__animated animate__backInLeft">
+                        <h2 class="blog-titulo" title="Últimas Noticias">Descubre Nuestros Proyectos: Blog de la
+                            Fundación Jaimes Chia</h2>
+                        <p class="blog-subtitulo" title="Noticias más recientes sobre nuestros proyectos y actividades">
+                            Sumérgete en nuestras historias de compromiso y colaboración comunitaria a través del blog
+                            de la Fundación Jaimes Chia.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center animate__animated animate__backInLeft">
+                        <!-- Título de la sección -->
+                        <div class="col-md-12">
+                            <h3 class="text-start filtro-titulo">Pulsa para filtrar</h3>
+                        </div>
+                        <!-- Barra de filtros -->
+                        <div class="col-md-8">
+                            <div class="d-flex justify-content-start">
+                                <!-- Filtros de categoría -->
+                                <a class="btn btn-outline-primary me-2 filtro" data-categoria="todos"
+                                    title="Mostrar todas las noticias">Todos</a>
+                                <a class="btn btn-outline-primary me-2 filtro" data-categoria="comunidad"
+                                    title="Mostrar noticias de la comunidad">Comunidad</a>
+                                <a class="btn btn-outline-primary me-2 filtro" data-categoria="social"
+                                    title="Mostrar noticias sociales">Social</a>
+                                <a class="btn btn-outline-primary me-2 filtro" data-categoria="contribucion"
+                                    title="Mostrar noticias sociales">Contribución</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenedor de noticias -->
+                <div class="container mt-5" id="noticias-container">
+                    <div class="row" data-aos="zoom-out"
+                    data-aos-duration="1000">
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 1 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/renovacion_aguascalientes_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de la renovación en el Parque Virgen del Carmen"
+                                    title="Renovación del Parque Virgen del Carmen: Un Renacimiento Verde y Social"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Renovación del Parque Virgen del Carmen: Un Renacimiento Verde y Social">
+                                        Renovación del Parque Virgen del Carmen: Un Renacimiento Verde y Social</h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card" title="Descripción de la renovación del parque">La
+                                        Fundación Jaimes Chía ha
+                                        culminado la renovación del Parque Virgen del Carmen en la ciudadela La
+                                        Libertad, barrio Aguas Calientes.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong>
+                                        Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia" href="renovacion_del_parque_virgen_del_carmen"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">10 de Marzo
+                                            2024</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agregar más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 2 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/mejoras_viales_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de las mejoras viales en la calle 3 de la avenida 6"
+                                    title="Mejoras Viales en la Calle 3 de la Avenida 6 del barrio Torcoroma"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Mejoras Viales en la Calle 3 de la Avenida 6 del barrio Torcoroma">
+                                        Mejoras Viales en la Calle 3 de la Avenida 6 del barrio Torcoroma</h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card" title="Descripción de las mejoras viales">La
+                                        Fundación
+                                        Jaimes Chía se enorgullece en anunciar la finalización de las mejoras viales en
+                                        la Calle
+                                        3 de la Avenida 6 ubicada en el barrio Torcoroma, un hito significativo para la
+                                        comunidad local.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong>
+                                        Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="mejoras_viales_en_la_calle3_de_la_avenida6_del_barrio_torcoroma"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">04 de
+                                            Diciembre de 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agregar más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 3 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/renovacion_bocono_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de la renovación de la cancha del sector Boconó"
+                                    title="Renovación de la Cancha en el Sector Boconó: Rescate y Embellecimiento Deportivo"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Renovación de la Cancha en el Sector Boconó: Rescate y Embellecimiento Deportivo">
+                                        Renovación de la Cancha en el Sector Boconó: Rescate y Embellecimiento Deportivo
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card" title="Descripción de la renovación de la cancha">
+                                        La
+                                        Fundación Jaimes Chía se complace en anunciar la exitosa renovación de la cancha
+                                        en el
+                                        sector Boconó, una transformación que ha devuelto vida y vitalidad a este
+                                        espacio
+                                        deportivo tan querido por la comunidad local.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong>
+                                        Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="renovacion_de_la_cancha_del_sector_bocono_un_espacio_deportivo_recuperado"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">20 de Junio
+                                            de 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agregar más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 3 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/noche_terror_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de la Noche de Terror y Solidaridad: Proyecto Especial de Halloween para la Comunidad"
+                                    title="Noche de Terror y Solidaridad: Proyecto Especial de Halloween para la Comunidad"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Noche de Terror y Solidaridad: Proyecto Especial de Halloween para la Comunidad">
+                                        Noche de Terror y Solidaridad: Proyecto Especial de Halloween para la Comunidad
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card" title="Descripción del proyecto especial">
+                                        La Fundación Jaimes Chía, en colaboración con la emisora Tropicana, celebró una inolvidable Noche de Terror y Solidaridad en honor a la festividad de Halloween.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong>
+                                        Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="noche_de_terror_y_solidaridad_proyecto_especial_de_halloween"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">31 de Octubre
+                                            de 2023</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agregar más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-social">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/alegria_diversion_aniversario_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de la alegría y diversión en el barrio Aniversario"
+                                    title="Alegría y Diversión en el Barrio Aniversario: Una Tarde Mágica para los Niños"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Alegría y Diversión en el Barrio Aniversario: Una Tarde Mágica para los Niños">
+                                        Alegría y Diversión en el Barrio Aniversario: Una Tarde Mágica para los Niños
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de diversión para niños">La
+                                        Fundación Jaimes Chía iluminó el Barrio Aniversario con una tarde llena de risas
+                                        y
+                                        emoción para los más pequeños de la comunidad. En la emblemática cancha arcoíris
+                                        del
+                                        Barrio La Libertad.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Social">
+                                        <strong>Categoría:</strong> Social
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="alegria_y_diversion_en_el_barrio_aniversario_una_tarde_magica"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">01 de
+                                            Noviembre de 2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-social">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/campana_covid_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa del Lanzamiento de una Campaña Integral Contra el COVID-19 en la Comunidad"
+                                    title="Lanzamiento de una Campaña Integral Contra el COVID-19 en la Comunidad"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Lanzamiento de una Campaña Integral Contra el COVID-19 en la Comunidad">
+                                        Lanzamiento de una Campaña Integral Contra el COVID-19 en la Comunidad
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento del lanzamiento de la campaña">La
+                                        En respuesta a la crisis de salud pública provocada por la pandemia de COVID-19, la Fundación Jaimes Chía ha lanzado una Campaña Integral destinada a brindar apoyo y solidaridad a la comunidad afectada.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Social">
+                                        <strong>Categoría:</strong> Social
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="lanzamiento_de_una_campana_integral_contra_el_covid_19_en_la_comunidad"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">30 de
+                                            Marzo de 2021</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-contribucion">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/impulsando_el_empleo_local_proyecto_de_domicilios_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de Impulsando el Empleo Local: Proyecto de Domicilios para Dinamizar la Economía Comunitaria"
+                                    title="Impulsando el Empleo Local: Proyecto de Domicilios para Dinamizar la Economía Comunitaria"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Impulsando el Empleo Local: Proyecto de Domicilios para Dinamizar la Economía Comunitaria">
+                                        Impulsando el Empleo Local: Proyecto de Domicilios para Dinamizar la Economía Comunitaria
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento del lanzamiento del empleo local">En un esfuerzo por apoyar a la comunidad durante la pandemia de COVID-19, la Fundación Jaimes Chía ha lanzado un innovador proyecto para impulsar el empleo local a través del servicio de domicilios.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Contribución">
+                                        <strong>Categoría:</strong> Contribución
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="impulsando_el_empleo_local_proyecto_de_domicilios_para_dinamizar_la_economia_comunitaria"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">08 de
+                                            Septiembre de 2020</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-social">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/sembrando_conciencia_verde_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de Sembrando Conciencia Verde: Niños Lideran Proyecto Innovador de Reciclaje en su Comunidad"
+                                    title="Sembrando Conciencia Verde: Niños Lideran Proyecto Innovador de Reciclaje en su Comunidad"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Sembrando Conciencia Verde: Niños Lideran Proyecto Innovador de Reciclaje en su Comunidad">
+                                        Sembrando Conciencia Verde: Niños Lideran Proyecto Innovador de Reciclaje en su Comunidad
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de sembrando conciencia verde">La Fundación Jaimes Chía ha llevado a cabo un emocionante evento denominado 'Sembrando Conciencia Verde', donde los niños jugaron un papel fundamental en promover prácticas de reciclaje y conciencia ambiental en su comunidad.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Social">
+                                        <strong>Categoría:</strong> Social
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="sembrando_conciencia_verde_ninos_lideran_proyecto_innovador_de_reciclaje_en_su_comunidad"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">04 de
+                                            Marzo de 2020</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/transformacion_parque_aguas_calientes_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de Transformación del Parque de la Virgen del Carmen: Pintoresco y Social"
+                                    title="Transformación del Parque de la Virgen del Carmen: Pintoresco y Social"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Transformación del Parque de la Virgen del Carmen: Pintoresco y Social">
+                                        Transformación del Parque de la Virgen del Carmen: Pintoresco y Social
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de transformación del parque">
+                                        La Fundación Jaimes Chía ha llevado a cabo un ambicioso proyecto de transformación del Parque de la Virgen del Carmen, convirtiéndolo en un espacio pintoresco y social que promueve la unión comunitaria y el cuidado del medio ambiente.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong> Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="transformacion_del_parque_de_la_virgen_del_carmen_pintoresco_y_social"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">16 de
+                                            Abril de 2019</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-comunidad">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/celebracion_espeluznante_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de la Celebración de un Espeluznante Halloween para los Niños de la Comunidad"
+                                    title="Celebración de un Espeluznante Halloween para los Niños de la Comunidad"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Celebración de un Espeluznante Halloween para los Niños de la Comunidad">
+                                        Celebración de un Espeluznante Halloween para los Niños de la Comunidad
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de la celebración espeluznante">
+                                        La Fundación Jaimes Chía llevó a cabo una espectacular celebración de Halloween, reuniendo a los niños de la comunidad para disfrutar de una jornada llena de diversión, creatividad y alegría.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Comunidad">
+                                        <strong>Categoría:</strong> Comunidad
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="celebracion_de_un_espeluznante_halloween_para_los_ninos_de_la_comunidad"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">31 de
+                                            Octubre de 2018</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-social">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/celebrando_alegria_infantil_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de Celebrando la Alegría Infantil: Un Día Especial para Nuestros Pequeños"
+                                    title="Celebrando la Alegría Infantil: Un Día Especial para Nuestros Pequeños"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Celebrando la Alegría Infantil: Un Día Especial para Nuestros Pequeños">
+                                        Celebrando la Alegría Infantil: Un Día Especial para Nuestros Pequeños
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de celebrando la alegría">
+                                        La Fundación Jaimes Chía, en colaboración con la Policía Nacional, organizó un evento memorable para celebrar el Día del Niño en la comunidad 3.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Social">
+                                        <strong>Categoría:</strong> Social
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="celebrando_la_alegria_infantil_un_dia_especial_para_nuestros_pequenos"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">28 de
+                                            Abril de 2018</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agrega más entradas de noticias aquí -->
+                        <div class="col-sm-12 col-md-6 blog-espaciado">
+                            <!-- Entrada de noticia 4 -->
+                            <div class="card blog-card mb-4 filtro-todos filtro-social">
+                                <!-- Imagen de la noticia -->
+                                <img src="assets/images/Inicio/Noticias/inauguracion_fundacion_1.webp" class="card-img-top img-fluid"
+                                    alt="Imagen representativa de Inauguración de la Fundación Jaimes Chía: Un Nuevo Horizonte para la Comunidad"
+                                    title="Inauguración de la Fundación Jaimes Chía: Un Nuevo Horizonte para la Comunidad"
+                                    loading="lazy">
+                                <div class="card-body cuerpo-card">
+                                    <!-- Título de la noticia -->
+                                    <h5 class="card-title titulo-card"
+                                        title="Inauguración de la Fundación Jaimes Chía: Un Nuevo Horizonte para la Comunidad">
+                                        Inauguración de la Fundación Jaimes Chía: Un Nuevo Horizonte para la Comunidad
+                                    </h5>
+                                    <!-- Descripción de la noticia -->
+                                    <p class="card-text texto-card"
+                                        title="Descripción del evento de celebrando la inauguración">
+                                        La comunidad de Ciudadela La Libertad en Cúcuta vivió un día histórico con la inauguración de la Fundación Jaimes Chía, un proyecto que promete marcar un antes y un después en el bienestar de la comunidad.</p>
+                                    <!-- Categoría de la noticia -->
+                                    <p class="card-text blog-categoria" title="Categoría: Social">
+                                        <strong>Categoría:</strong> Social
+                                    </p>
+                                    <!-- Enlace a la noticia completa -->
+                                    <a class="leer-noticia"
+                                        href="inauguracion_de_la_fundacion_jaimes_chia_un_nuevo_horizonte_para_la_comunidad"
+                                        title="Leer noticia completa">Leer noticia completa</a>
+                                    <!-- Fecha de la noticia -->
+                                    <p class="card-text mt-2"><small class="text-body-secondary blog-fecha">08 de
+                                            Julio de 2017</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de Sesión de Blog -->
+    </main>
+
+    <!-- Inicio de Boton de Discapacidad -->
+    <div id="discapacidad-componente"></div>
+    <!-- Fin de Boton de Discapacidad -->
+
+    <!-- Inicio de Boton de Donacion -->
+    <div id="donacion-componente"></div>
+    <!-- Inicio de Boton de Donacion -->
+
+    <!-- Inicio de Footer -->
+    <footer id="footer-componente"></footer>
+    <!-- Fin de Footer -->
+
+    <!-- JS Componentes -->
+    <script defer src="assets/javascript/components.js"></script>
+    <!-- JS Bootstrap framework -->
+    <script defer src="vendor/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+    <!-- JS View Description animation -->
+    <script defer src="assets/javascript/view_description.js"></script>
+    <!-- JS AOS Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        // Inicialización de AOS para animaciones
+        AOS.init({
+            easing: "ease-in", // Configuración de animación
+            once: true, // Animación se ejecuta solo una vez
+        });
+    </script>
+</body>
+
+</html>

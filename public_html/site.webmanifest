@@ -1,0 +1,22 @@
+{
+    "name": "Fundación Jaimes Chía",
+    "short_name": "FJC",
+    "description": "La Fundación Jaimes Chía se dedica a mejorar la calidad de vida de las personas más vulnerables de nuestra comunidad mediante el apoyo, recursos y programas que generan un impacto positivo y duradero",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "favicon/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

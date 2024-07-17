@@ -1,0 +1,4 @@
+# Ignorar archivos de configuración sensibles
+pdoconfig.php
+public_html/backend/database.php
+public_html/backend/contactos.sql

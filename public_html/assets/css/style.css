@@ -1,0 +1,1644 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Estilos para barras de desplazamiento en WebKit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2793f2;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff0000;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para el logo de la fundación */
+.logo-fundacion {
+  width: 100%;
+  height: 120px;
+  transition: transform 0.6s;
+}
+
+/* Efecto de escala al pasar el mouse sobre el logo */
+.logo-fundacion:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* Estilos para el eslogan de la fundación */
+.eslogan-fundacion {
+  color: #ff0000;
+  font-style: italic;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.nav-link {
+  color: #020873;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Cambio de color al pasar el mouse sobre los enlaces */
+.nav-link:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de menú desplegable */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+/* Estilos cuando el botón de menú desplegable o el botón de cerrar están enfocados */
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Animación para los enlaces de la barra de navegación */
+.tracking-in-expand-fwd {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+/* Keyframes para la animación de los enlaces de la barra de navegación */
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* Animación para el logo de la fundación */
+.flip-in-diag-1-tr {
+  animation: flip-in-diag-1-tr 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Keyframes para la animación del logo de la fundación */
+@keyframes flip-in-diag-1-tr {
+  0% {
+    transform: rotate3d(1, 1, 0, -80deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+    opacity: 1;
+  }
+}
+
+/* Estilos para el contenedor principal del Swiper */
+.swiper {
+  margin-top: 2px;
+  width: 100%;
+  height: 600px;
+}
+
+/* Estilos para videos dentro de cada diapositiva */
+.swiper-slide video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Estilos para imágenes dentro de cada diapositiva */
+.swiper img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+}
+
+
+/* Estilos para el contenedor de texto en cada diapositiva */
+.swiper .slide-text {
+  position: relative;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  padding: 40px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+/* Estilos para el título dentro del contenedor de texto */
+.swiper .slide-text h2 {
+  font-size: 3vw;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo dentro del contenedor de texto */
+.swiper .slide-text p {
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+
+/* Animación de efecto Ken Burns para imágenes */
+.kenburns-top {
+  animation: kenburns-top 15s ease-out both;
+  /* Animación de 15 segundos */
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
+
+/* Estilos para los botones de navegación (anterior y siguiente) */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  --swiper-navigation-size: 30px;
+  height: 40px;
+  width: 40px;
+  top: 55%;
+  transform: translateY(-50%);
+  color: #e10000;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 50%;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Estilo específico para el botón de navegación izquierdo */
+.swiper .swiper-button-prev {
+  left: -10px;
+  border-radius: 0 65px 65px 0;
+}
+
+/* Estilo específico para el botón de navegación derecho */
+.swiper .swiper-button-next {
+  right: -10px;
+  border-radius: 65px 0 0 65px;
+}
+
+/* Mostrar botones al pasar el cursor sobre el Swiper */
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+}
+
+/* Ajustes para la paginación del Swiper */
+.swiper .swiper-pagination {
+  --swiper-pagination-color: #2793f2;
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-bullet-inactive-color: #e10000;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+/* Estilos para el contenedor de redes sociales */
+.social-redes {
+  position: fixed;
+  top: 50%;
+  left: -3px;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+/* Estilos para los botones de redes sociales */
+.redes-sociales-boton {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  padding: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: margin-left 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Estilos para el icono de las redes sociales */
+.redes-sociales-logo {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Estilos específicos para el botón de Facebook */
+.btn-facebook,
+.red-social-facebook {
+  background-color: #1b81e2;
+}
+
+/* Estilos específicos para el botón de Whatsapp */
+.btn-whatsapp,
+.red-social-whatsapp {
+  background-color: #25d366;
+}
+
+/* Estilos específicos para el botón de Instagram */
+.red-social-instagram {
+  background-color: #fd0bbe;
+}
+
+/* Estilos específicos para el botón de YouTube */
+.red-social-youtube {
+  background-color: #f00;
+}
+
+/* Efecto de desplazamiento al pasar el cursor sobre los botones */
+.redes-sociales-boton:hover {
+  margin-left: 10px;
+}
+
+/* Estilos para la sección de pie de página */
+.footer-seccion {
+  background: #d31027;
+  background: -webkit-linear-gradient(to right, #ea384d, #d31027);
+  background: linear-gradient(to right, #ea384d, #d31027);
+}
+
+/* Estilos para el título del pie de página */
+.footer-titulo {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilos para el subtítulo del pie de página */
+.footer-subtitulo {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Estilos para los enlaces y contenido del pie de página */
+.footer-enlace,
+.footer-contenido {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces del pie de página */
+.footer-enlace:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+/* Estilos para la línea horizontal del pie de página */
+.footer-seccion hr {
+  color: #fff;
+}
+
+/* Estilos para el texto de derechos reservados del pie de página */
+.footer-derechos {
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Estilos para el componente de donación flotante */
+.donacion-flotante {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1000;
+  animation: jump 0.5s infinite alternate;
+}
+
+.donacion-flotante-boton {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fac128;
+  color: #000;
+  border-radius: 30px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.donacion-flotante-boton:hover {
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4cbb5f;
+}
+
+.donacion-flotante-icono {
+  font-size: 15px;
+  margin-right: 5px;
+  color: #ff0000;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Estilos para la flecha de desplazamiento */
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Estilos para el botón de flecha */
+.scroll-arrow .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #2793f2;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Estado activo de la flecha (visible) */
+.scroll-arrow.active {
+  opacity: 1;
+}
+
+/* Estilos generales para el botón de accesibilidad */
+#accessibility-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: #020873;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: right 0.5s ease;
+  border-radius: 50%;
+}
+
+#accessibility-button:hover {
+  background-color: #010661;
+}
+
+#accessibility-button i {
+  font-size: 20px;
+}
+
+/* Estilos para el panel de accesibilidad */
+.accessibility-panel {
+  position: fixed;
+  top: 50%;
+  right: -300px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #2793f2;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  align-items: center;
+  padding: 5px;
+  transition: right 0.5s ease;
+}
+
+.accessibility-panel button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 13px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.accessibility-panel button:hover {
+  background-color: #f0f0f0;
+}
+
+.accessibility-panel button i {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+/* Estilos para el texto en los botones */
+.accessibility-panel button span {
+  font-size: 12px;
+  color: #000;
+  margin-left: 8px;
+}
+
+/* Mostrar el panel cuando esté activo */
+.accessibility-panel.active {
+  right: 1px;
+}
+
+/* Mover el botón cuando el panel esté activo */
+#accessibility-button.active {
+  right: 190px;
+}
+
+/* Estilos para el botón de traducción */
+#translate-button {
+  position: fixed;
+  top: 75%;
+  right: 0;
+  z-index: 100;
+}
+
+#translate {
+  background-color: #020873;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease;
+  border-radius: 50%;
+}
+
+#translate:hover {
+  background-color: #010661;
+}
+
+/* Estilos para las opciones de traducción */
+.translate-options {
+  position: absolute;
+  bottom: 0;
+  right: calc(100% + 10px);
+  background-color: #fff;
+  border: 1px solid #2793f2;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.translate-option {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0 2px;
+  padding: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.translate-option:hover {
+  background-color: #f0f0f0;
+}
+
+.translate-option img {
+  width: 18px;
+  height: auto;
+}
+
+/* Pagina de Inicio */
+
+/* Estilos para la sección de Hastags */
+.hastag-seccion {
+  width: 100%;
+  margin: 3rem 0;
+  background-color: #5f72d9;
+  color: #fff;
+}
+
+.hastag-seccion h1 {
+  font-size: 3vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Estilos para la sección de Información */
+
+.blog-seccion,
+.testimonial-carousel,
+.proyecto-seccion,
+.conocenos-seccion,
+.informacion-seccion {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.donacion-info-img,
+.imagen-galeria,
+.conocenos-img,
+.informacion-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.donacion-info-titulo,
+.contacto-info-titulo,
+.galeria-titulo,
+.conocenos-subtitulo,
+.donacion-titulo,
+.impacto-titulo,
+.informacion-titulo {
+  font-size: 25px;
+  color: #020873;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact-info-parrafo,
+.galeria-subtitulo,
+.conocenos-valores-subtitulo,
+.conocenos-texto,
+.donacion-subtitulo,
+.impacto-subtitulo,
+.informacion-parrafo {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.boton-informacion {
+  display: inline-block;
+  font-size: 15px;
+  border: none;
+  background-color: #5f72d9;
+  color: #000;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.boton-informacion:hover {
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+/* Estilos para la sección de Impacto */
+.impacto-seccion {
+  width: 100%;
+  background-color: #f8f9fa;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.impacto-icono {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: #5f72d9;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Estilo del título de los valores */
+.conocenos-valores-titulo,
+.impacto-texto-icono {
+  font-size: 15px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.impacto-counter {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Estilos para la sección de Donación */
+.donacion-seccion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.boton-donacion {
+  display: inline-block;
+  background-color: #fac128;
+  color: #000;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.boton-donacion:hover {
+  background-color: #ff0000;
+  font-size: 17px;
+  color: #fff;
+}
+
+.icono-donacion {
+  margin-right: 5px;
+  color: #000;
+}
+
+/* Estilos para la sección de Noticias */
+.noticias-seccion {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #5f72d9;
+  padding: 10px;
+}
+
+.noticias-imagenes {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.noticias-seccion .card-body {
+  position: relative;
+  min-height: 150px;
+}
+
+.noticias-seccion .text-body-secondary {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.noticias-titulo-seccion {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+  color: #fff;
+}
+
+.noticias-titulo {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.boton-noticias {
+  font-size: 12px;
+  border: none;
+  display: inline-block;
+  background-color: #5f72d9;
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.boton-noticias:hover {
+  font-size: 14px;
+  background-color: #ff0000;
+}
+
+.texto-noticia {
+  font-size: 12px;
+}
+
+.noticia-carta {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  margin-right: 5px;
+}
+
+/* Efecto hover para las tarjetas */
+.noticia-carta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagina de Conocenos */
+
+/* Estilos para la sección de Video */
+#video-container {
+  /* Contenedor del video con proporción de aspecto 16:9 y ajustes de posición */
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  /* Proporción de aspecto 16:9 (9 / 16 = 0.5625) */
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+#video-container video {
+  /* Ajustes de estilo para el video dentro del contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 35px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para la seccion de conocenos */
+
+.contacto-titulo,
+.blog-titulo,
+.proyecto-titulo,
+.conocenos-titulo {
+  font-size: 30px;
+  color: #020873;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.contacto-descriptivo,
+.blog-subtitulo,
+.proyecto-descriptivo,
+.conocenos-descriptivo {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para la seccion de Valores Corporativos */
+.conocenos-valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.conocenos-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.conocenos-icon {
+  color: #fac128;
+  font-size: 50px;
+  margin-bottom: 20px;
+  transition: font-size 0.3s;
+}
+
+.conocenos-icon:hover {
+  font-size: 60px;
+}
+
+/* Estilos para la sección del equipo */
+.equipo-seccion {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.equipo-card {
+  background-color: transparent;
+}
+
+.equipo-subtitulo {
+  font-size: 30px;
+  color: #020873;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.equipo-nombre {
+  font-size: 15px;
+  color: #020873;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.equipo-img {
+  max-width: 70%;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 5px solid #5f72d9;
+}
+
+.equipo-img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.equipo-cargo {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Pagina de Nuestros Proyectos */
+
+/* Estilos para la seccion de Galeria */
+.titulo-galeria {
+  font-size: 20px;
+  font-weight: 500;
+  color: #020873;
+}
+
+.imagen-galeria:hover {
+  transition: all 3s ease-in;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+hr {
+  color: #2793f2;
+}
+
+/* Estilos para la seccion de Testimonios */
+.testimonio-titulo {
+  font-size: 25px;
+  color: #020873;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.testimonial-item {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50px 0 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 5px solid #ff0000;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #000;
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  color: #020873;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+/* Pagina de Blog */
+
+/* Estilos para la seccion de Blog */
+#noticias-container {
+  padding: 20px 0;
+}
+
+.filtro-titulo {
+  color: #020873;
+  font-size: 20px;
+}
+
+.filtro {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+}
+
+.blog-espaciado {
+  margin-bottom: 20px;
+}
+
+.blog-card {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card .card-img-top {
+  border-radius: 8px 8px 0 0;
+  max-width: 100%;
+  height: 400px;
+}
+
+.blog-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 1);
+}
+
+.cuerpo-card {
+  padding: 20px;
+  flex: 1;
+}
+
+.titulo-card {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.texto-card {
+  font-size: 15px;
+  color: #666;
+  height: 100px;
+  overflow: hidden;
+}
+
+.blog-categoria {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.leer-noticia {
+  background-color: #ff0000;
+  /* Color de fondo del botón */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.leer-noticia:hover {
+  background-color: #ff4040;
+}
+
+.blog-fecha {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Pagina de Contacto */
+
+/* Estilos para la seccion de Contacto Informacion */
+
+.contact-info-parrafo a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.contact-info-parrafo a:hover {
+  color: #2793f2;
+  text-decoration: underline;
+}
+
+.contact-info-parrafo i {
+  font-size: 15px;
+  align-items: center;
+  color: #2793f2;
+}
+
+/* Estilos para la seccion Donación */
+.donacion-lista,
+.donacion-info-parrafo {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.donacion-lista li {
+  margin-bottom: 10px;
+}
+
+.boton-donacion-contacto {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #5f72d9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.boton-donacion-contacto:hover {
+  background-color: #0056b3;
+}
+
+#frase-celebre {
+  background-color: #e0e0e0;
+  border-left: 5px solid #020873;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Estilos para la seccion de Formulario */
+.contact-form {
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.formulario-titulo {
+  font-size: 25px;
+  color: #020873;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-form label {
+  color: #020873;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.contact-form a {
+  color: #2793f2;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-form a:hover {
+  color: #d31027;
+  text-decoration: underline;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+.contact-form input[type="checkbox"]:checked {
+  border: 1px solid #fff;
+  background-color: #ff0000;
+}
+
+.contact-form .form-check-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #d31027;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  font-size: 16px;
+  background-color: #ff0000;
+}
+
+.g-recaptcha {
+  max-width: 100%;
+  width: 100%;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #28a745;
+}
+
+/* Pagina de Donacion */
+
+/* Sección de Realizar Donación */
+.realizar-donacion-section {
+  padding: 60px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donacion-titulo-pagina {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
+
+.donacion-titulo-pagina+p {
+  font-size: 2rem;
+  color: #2793f2;
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas de Donación */
+.donacion-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.donacion-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-card {
+  width: 100%;
+  height: 300px;
+  border-bottom: 2px solid #ccc;
+}
+
+.donacion-cuerpo {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.titulo-donacion-card {
+  font-size: 20px;
+  color: #020873;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.texto-donacion-card {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Botones de Donación */
+.boton-paypal,
+.boton-wompi,
+.boton-whatsapp {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.boton-paypal:hover,
+.boton-wompi:hover,
+.boton-whatsapp:hover {
+  background-color: #020873;
+}
+
+.boton-paypal {
+  background-color: #fac128;
+}
+
+.boton-wompi {
+  background-color: #00825a;
+}
+
+.boton-whatsapp {
+  background-color: #25d366;
+}
+
+/* Mensaje de Impacto */
+.impact-message {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #5f72d9;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.impact-message .card-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.impact-message .card-text {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.impact-message p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.impact-importante {
+  font-style: italic;
+}
+
+/* Estilo para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* Centrar verticalmente */
+  padding: 20px;
+  border: 2px solid #fac128;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s;
+}
+
+/* Botón de cerrar (X) */
+.close {
+  color: #ff0000;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #2793f2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-message {
+  font-size: 25px;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.modal-message span {
+  color: #ff0000;
+}
+
+
+/* Pagina de Registro Completado */
+
+/* Estilos para la seccion de retorno*/
+.registro-section {
+  background-color: #f8f9fa;
+}
+
+.registro-card {
+  border: 1px solid #ff0000;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 500px;
+  margin: 60px 0;
+}
+
+.registro-titulo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #020873;
+  margin-bottom: 20px;
+}
+
+.registro-texto {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.button-retorno {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.button-retorno:hover {
+  background-color: #020873;
+}
+
+/* Pagina de Tratamiento de Datos y Terminos y Condiciones */
+
+.politica-section,
+.terminos-section {
+  background-color: #fff;
+  text-align: justify;
+}
+
+.politica-titulo,
+.terminos-titulo {
+  color: #020873;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item-politica,
+.item-terminos {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.item-parrafo {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.item-politica-lista li,
+.item-terminos-lista li {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.item-politica-lista a,
+.item-terminos-lista a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.item-politica-lista a:hover,
+.item-terminos-lista a:hover {
+  color: #2793f2;
+  text-decoration: underline;
+}
+
+/* Estilos para el botón de descarga */
+.boton-politica,
+.boton-aviso {
+  display: inline-block;
+  padding: 15px;
+  background-color: #2793f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.boton-politica:hover,
+.boton-aviso:hover {
+  color: #000;
+  background-color: #fac128;
+}
+
+/* Pagina de Hipervinculos de Noticias */
+
+/* Estilos para la seccion de Hipervinculos */
+.evento-seccion {
+  padding: 40px 0;
+}
+
+.breadcrumb {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.breadcrumb-item a {
+  color: #020873;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: ">";
+  color: #ff0000;
+}
+
+.breadcrumb-item.active {
+  color: #343a40;
+  font-weight: bold;
+}
+
+/* Título del Evento */
+.evento-titulo {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #2793f2;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.evento-meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.evento-meta .evento-categoria,
+.evento-meta .evento-fecha {
+  font-weight: 500;
+}
+
+/* Contenido del Evento */
+.descripcion-evento {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* Imágenes del Evento */
+.evento-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.evento-img:hover {
+  transform: scale(1.05);
+}
+
+/* Botones de compartir en redes sociales */
+.social-share-buttons {
+  margin-top: 30px;
+}
+
+.btn-social {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+.btn-email {
+  background-color: #666;
+}
+
+.btn-twitter {
+  background-color: #2793f2;
+}
+
+.btn-twitter:hover {
+  background-color: #000;
+}
+
+.btn-email:hover {
+  background-color: #343a40;
+}
+

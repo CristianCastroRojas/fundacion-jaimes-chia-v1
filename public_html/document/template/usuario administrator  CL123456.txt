@@ -1,0 +1,2 @@
+usuario: administrator  CL:123456
+https://www.micuponcolombia.com/admin/auth/login

@@ -1,0 +1,170 @@
+<div class="discapacidad" id="discapacidad-componente">
+    <!-- Componente de accesibilidad para ajustes de accesibilidad -->
+
+    <button class="accessibility-button" id="accessibility-button" title="Botón de accesibilidad">
+        <!-- Botón principal de accesibilidad con ícono -->
+
+        <i class="fas fa-universal-access" aria-hidden="true"></i>
+        <!-- Ícono de accesibilidad (Universal Access) -->
+    </button>
+
+    <div class="accessibility-panel" id="accessibility-panel">
+        <!-- Panel de opciones de accesibilidad -->
+
+        <button id="increase-font" title="Aumentar tamaño de la fuente">
+            <!-- Botón para aumentar tamaño de la fuente -->
+
+            <i class="fas fa-plus" aria-hidden="true"></i>
+            <!-- Ícono de signo más -->
+            <span>Aumentar fuente</span>
+            <!-- Texto descriptivo -->
+        </button>
+
+        <button id="reset-styles" title="Restablecer estilos">
+            <!-- Botón para restablecer estilos -->
+
+            <i class="fas fa-undo" aria-hidden="true"></i>
+            <!-- Ícono de deshacer -->
+            <span>Restablecer</span>
+            <!-- Texto descriptivo -->
+        </button>
+
+        <button id="decrease-font" title="Disminuir tamaño de la fuente">
+            <!-- Botón para disminuir tamaño de la fuente -->
+
+            <i class="fas fa-minus" aria-hidden="true"></i>
+            <!-- Ícono de signo menos -->
+            <span>Disminuir fuente</span>
+            <!-- Texto descriptivo -->
+        </button>
+
+        <button id="toggle-contrast" title="Alternar contraste">
+            <!-- Botón para alternar contraste -->
+
+            <i class="fas fa-adjust" aria-hidden="true"></i>
+            <!-- Ícono de ajuste -->
+            <span>Contraste</span>
+            <!-- Texto descriptivo -->
+        </button>
+
+        <button id="toggle-cursor" title="Aumentar contenido de la pantalla">
+            <!-- Botón para aumentar contenido de la pantalla -->
+
+            <i class="fas fa-search-plus" aria-hidden="true"></i>
+            <!-- Ícono de lupa -->
+            <span>Aumentar Contenido</span>
+            <!-- Texto descriptivo -->
+        </button>
+
+        <button id="toggle-narrator" title="Alternar narrador">
+            <!-- Botón para alternar narrador -->
+
+            <i class="fas fa-headphones" aria-hidden="true"></i>
+            <!-- Ícono de auriculares -->
+            <span>Narrador</span>
+            <!-- Texto descriptivo -->
+        </button>
+    </div>
+</div>
+
+<div class="translate" id="translate-button">
+    <!-- Componente para botón de traducción -->
+
+    <button id="translate" title="Traducir página">
+        <!-- Botón para activar opciones de traducción -->
+
+        <i class="fas fa-language" aria-hidden="true"></i>
+        <!-- Ícono de idioma -->
+    </button>
+
+    <div class="translate-options" style="display: none;">
+        <!-- Opciones de traducción ocultas por defecto -->
+
+        <button class="translate-option" onclick="changeLanguage('es')" data-lang="es" title="Español">
+            <!-- Botón para seleccionar Español -->
+
+            <img src="assets\images\flags\Spain_Flag.png" alt="Bandera de España">
+            <!-- Imagen de bandera de España -->
+        </button>
+
+        <button class="translate-option" onclick="changeLanguage('en')" data-lang="en" title="Inglés">
+            <!-- Botón para seleccionar Inglés -->
+
+            <img src="assets/images/flags/English_Flag.png" alt="Bandera de Inglaterra">
+            <!-- Imagen de bandera de Inglaterra -->
+        </button>
+
+        <button class="translate-option" onclick="changeLanguage('fr')" data-lang="fr" title="Francés">
+            <!-- Botón para seleccionar Francés -->
+
+            <img src="assets\images\flags\France_Flag.png" alt="Bandera de Francia">
+            <!-- Imagen de bandera de Francia -->
+        </button>
+
+        <button class="translate-option" onclick="changeLanguage('de')" data-lang="de" title="Alemán">
+            <!-- Botón para seleccionar Alemán -->
+
+            <img src="assets/images/flags/Germany_Flag.png" alt="Bandera de Alemania">
+            <!-- Imagen de bandera de Alemania -->
+        </button>
+
+        <button class="translate-option" onclick="changeLanguage('zh-CN')" data-lang="zh" title="Chino">
+            <!-- Botón para seleccionar Chino -->
+
+            <img src="assets/images/flags/Chinese_Flag.png" alt="Bandera de China">
+            <!-- Imagen de bandera de China -->
+        </button>
+    </div>
+</div>
+
+<div id="google_translate_element" style="display: none;"></div>
+<!-- Elemento de Google Translate oculto por defecto -->
+
+<script>
+    // Función que oculta las opciones de traducción al cargar el contenido de la página
+    document.addEventListener('DOMContentLoaded', function () {
+        var translateOptions = document.querySelector('.translate-options');
+        if (translateOptions) {
+            translateOptions.style.display = 'none';
+        }
+    });
+
+    // Función para cargar el script de la API de Google Translate
+    function loadGoogleTranslateScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+    }
+
+    // Llamada para cargar el script de Google Translate al cargar la página
+    loadGoogleTranslateScript();
+
+    // Función para inicializar la barra de traducción de Google
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es', // Idioma de la página original: Español
+            includedLanguages: 'es,en,fr,de,zh-CN', // Idiomas a incluir: Inglés, Francés, Alemán, Chino
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // Función para cambiar el idioma de traducción
+    function changeLanguage(langCode) {
+        var googleTranslateElement = document.querySelector(".goog-te-combo");
+        if (googleTranslateElement) {
+            googleTranslateElement.value = langCode;
+            googleTranslateElement.dispatchEvent(new Event('change'));
+        }
+    }
+
+    // Evento para mostrar u ocultar las opciones de traducción al hacer clic en el botón de traducción
+    document.getElementById('translate').addEventListener('click', function () {
+        var translateOptions = document.querySelector('.translate-options');
+        if (translateOptions) {
+            translateOptions.style.display = (translateOptions.style.display === 'none') ? 'flex' : 'none';
+        }
+    });
+
+</script>

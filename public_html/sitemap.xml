@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- URLs estándar -->
+<url>
+  <loc>https://fundacionjaimeschia.org/</loc>
+  <priority>1.0</priority>
+  <lastmod>2024-07-12</lastmod>
+  <changefreq>daily</changefreq>
+  <image:image>
+    <image:loc>http://fundacionjaimeschia.org/assets/images/Inicio/Niños_Jugando_Pelotas.jpg</image:loc>
+    <image:caption>Niños jugando con pelotas</image:caption>
+  </image:image>
+  <video:video>
+    <video:title>Video de niños jugando con pelotas</video:title>
+    <video:description>Video de niños jugando alegremente con pelotas en un ambiente divertido.</video:description>
+    <video:content_loc>http://fundacionjaimeschia.org/assets/images/Inicio/Niños_Jugando_Pelotas.mp4</video:content_loc>
+    <video:duration>19</video:duration>
+  </video:video>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/conocenos</loc>
+  <priority>0.9</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <image:image>
+    <image:loc>http://fundacionjaimeschia.org/assets/images/conocenos/Niños_Jugando_Confeti.jpg</image:loc>
+    <image:caption>Niños jugando con confeti</image:caption>
+  </image:image>
+  <video:video>
+    <video:title>Video de niños jugando con confeti</video:title>
+    <video:description>Video de niños disfrutando y jugando con confeti en un ambiente festivo.</video:description>
+    <video:content_loc>http://fundacionjaimeschia.org/assets/images/conocenos/Niños_Jugando_Confeti.mp4</video:content_loc>
+    <video:duration>14</video:duration>
+  </video:video>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/nuestrosproyectos</loc>
+  <priority>0.9</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/blog</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/contacto</loc>
+  <priority>0.7</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/realizar_donativos</loc>
+  <priority>0.7</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/renovacion_del_parque_virgen_del_carmen</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/mejoras_viales_en_la_calle3_de_la_avenida6_del_barrio_torcoroma</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/renovacion_de_la_cancha_del_sector_bocono_un_espacio_deportivo_recuperado</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/noche_de_terror_y_solidaridad_proyecto_especial_de_halloween</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/alegria_y_diversion_en_el_barrio_aniversario_una_tarde_magica</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/lanzamiento_de_una_campana_integral_contra_el_covid_19_en_la_comunidad</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/impulsando_el_empleo_local_proyecto_de_domicilios_para_dinamizar_la_economia_comunitaria</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-06</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/sembrando_conciencia_verde_ninos_lideran_proyecto_innovador_de_reciclaje_en_su_comunidad</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/transformacion_del_parque_de_la_virgen_del_carmen_pintoresco_y_social</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/celebracion_de_un_espeluznante_halloween_para_los_ninos_de_la_comunidad</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/celebrando_la_alegria_infantil_un_dia_especial_para_nuestros_pequenos</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://fundacionjaimeschia.org/inauguracion_de_la_fundacion_jaimes_chia_un_nuevo_horizonte_para_la_comunidad</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-08</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+</urlset>

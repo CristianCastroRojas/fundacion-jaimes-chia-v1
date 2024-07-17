@@ -1,0 +1,1195 @@
+/* MediaQuerys Responsive */
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #e10000;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Media queries para pantallas de 768px */
+@media (max-width: 768px) {
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .swiper {
+        height: 500px;
+    }
+
+    .swiper-slide video {
+        height: 500px;
+    }
+
+    .swiper .slide-text {
+        bottom: 20%;
+        padding: 20px;
+    }
+
+    .hastag-seccion h1,
+    .swiper .slide-text h2 {
+        font-size: 4vw;
+    }
+
+    .swiper .slide-text p {
+        font-size: 2.5vw;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .social-redes {
+        top: 45%;
+    }
+
+    .redes-sociales-boton {
+        width: 35px;
+        height: 35px;
+    }
+
+    .redes-sociales-logo {
+        font-size: 18px;
+    }
+
+    .footer-titulo {
+        font-size: 18px;
+    }
+
+    .footer-subtitulo,
+    .footer-enlace,
+    .footer-contenido {
+        font-size: 14px;
+    }
+
+    .footer-derechos {
+        font-size: 10px;
+    }
+
+    .donacion-flotante-boton {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .donacion-flotante-boton:hover {
+        font-size: 15px;
+    }
+
+    .donacion-flotante-icono {
+        font-size: 13px;
+    }
+
+    .scroll-arrow .arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .scroll-arrow i {
+        font-size: 25px;
+    }
+
+    .translate #translate,
+    .discapacidad #accessibility-button {
+        width: 35px;
+        height: 35px;
+        padding: 20px;
+    }
+
+    .discapacidad #accessibility-button i {
+        font-size: 18px;
+    }
+
+    .accessibility-panel {
+        right: -250px;
+        width: 190px;
+    }
+
+    .discapacidad .accessibility-panel button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .discapacidad .accessibility-panel button i {
+        font-size: 10px;
+    }
+
+    .discapacidad .accessibility-panel button span {
+        font-size: 10px;
+    }
+
+    .translate #translate-button {
+        top: 80%;
+    }
+
+    .translate .translate-option img {
+        width: 16px;
+    }
+
+    .donacion-info-titulo,
+    .contacto-info-titulo,
+    .galeria-titulo,
+    .conocenos-subtitulo,
+    .donacion-titulo,
+    .impacto-titulo,
+    .informacion-titulo {
+        font-size: 20px;
+    }
+
+    .contact-info-parrafo,
+    .galeria-subtitulo,
+    .conocenos-valores-subtitulo,
+    .conocenos-texto,
+    .donacion-subtitulo,
+    .impacto-subtitulo,
+    .informacion-parrafo {
+        font-size: 14px;
+    }
+
+    .boton-informacion {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .boton-informacion:hover {
+        font-size: 15px;
+    }
+
+    .impacto-icono {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .impacto-counter {
+        font-size: 20px;
+    }
+
+    .conocenos-valores-titulo,
+    .impacto-texto-icono {
+        font-size: 12px;
+    }
+
+    .boton-donacion {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .boton-donacion:hover {
+        font-size: 15px;
+    }
+
+    .icono-donacion {
+        font-size: 12px;
+    }
+
+    .noticias-imagenes {
+        height: 150px;
+    }
+
+    .noticias-titulo-seccion {
+        font-size: 20px;
+    }
+
+    .noticias-titulo {
+        font-size: 14px;
+    }
+
+    .boton-noticias {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .boton-noticias:hover {
+        font-size: 12px;
+    }
+
+    .noticias-seccion .text-body-secondary {
+        bottom: 15px;
+    }
+
+    .noticias-seccion .card-body {
+        min-height: 100px;
+    }
+
+    .texto-noticia {
+        font-size: 10px;
+    }
+
+    .noticia-carta {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Estilos para la sección de Video */
+    #video-container {
+        margin-bottom: 2rem;
+    }
+
+    #video-container video {
+        border-radius: 25px;
+    }
+
+    /* Estilos para la seccion de conocenos */
+    .contacto-titulo,
+    .blog-titulo,
+    .proyecto-titulo,
+    .conocenos-titulo {
+        font-size: 20px;
+        margin: 1.5rem 0;
+    }
+
+    .contacto-descriptivo,
+    .blog-subtitulo,
+    .proyecto-descriptivo,
+    .conocenos-descriptivo {
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Estilos para la seccion de Valores Corporativos */
+    .conocenos-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .conocenos-icon:hover {
+        font-size: 40px;
+    }
+
+    /* Estilos para la sección del equipo */
+    .equipo-subtitulo {
+        font-size: 25px;
+        margin-bottom: 1.5rem;
+    }
+
+    .equipo-nombre {
+        font-size: 13px;
+    }
+
+    .equipo-img {
+        max-width: 50%;
+        height: 170px;
+        border: 4px solid #5f72d9;
+    }
+
+    .equipo-img:hover {
+        transform: none;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .equipo-cargo {
+        font-size: 13px;
+    }
+
+    /* Estilos para la seccion de Galeria */
+    .titulo-galeria {
+        font-size: 18px;
+    }
+
+    .imagen-galeria {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Estilos para la seccion de Testimonios */
+    .testimonio-titulo {
+        font-size: 20px;
+        margin-top: 1.5rem;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+    .testimonial-img {
+        width: 150px;
+        height: 200px;
+        border-radius: 40px 0 40px;
+        margin-bottom: 15px;
+        border: 4px solid #ff0000;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        margin-top: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .testimonial-author {
+        font-size: 14px;
+    }
+
+    /* Estilos para la seccion de Blog */
+    #noticias-container {
+        padding: 15px 0;
+    }
+
+    .filtro-titulo {
+        font-size: 18px;
+    }
+
+    .filtro {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .blog-espaciado {
+        margin-bottom: 15px;
+    }
+
+    .blog-card .card-img-top {
+        height: 300px;
+    }
+
+    .cuerpo-card {
+        padding: 15px;
+    }
+
+    .titulo-card {
+        font-size: 18px;
+    }
+
+    .texto-card {
+        font-size: 14px;
+        height: 80px;
+    }
+
+    .blog-categoria {
+        font-size: 14px;
+    }
+
+    .leer-noticia {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .blog-fecha {
+        font-size: 12px;
+    }
+
+    /* Estilos para la seccion de Contacto Informacion */
+    .contact-info-parrafo a {
+        font-size: 14px;
+    }
+
+    .contact-info-parrafo i {
+        font-size: 13px;
+    }
+
+    /* Estilos para la seccion Donación */
+    .donacion-lista,
+    .donacion-info-parrafo {
+        font-size: 14px;
+    }
+
+    .donacion-lista li {
+        margin-bottom: 8px;
+    }
+
+    .boton-donacion-contacto {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    #frase-celebre {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Estilos para la seccion de Formulario */
+    .contact-form {
+        padding: 30px;
+    }
+
+    .formulario-titulo {
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form textarea {
+        height: 80px;
+    }
+
+    .contact-form .form-check-label {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    /* Sección de Realizar Donación */
+    .realizar-donacion-section {
+        padding: 40px 0;
+    }
+
+    .donacion-titulo-pagina {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .donacion-titulo-pagina+p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Tarjetas de Donación */
+    .donacion-card {
+        max-width: 250px;
+        min-height: 250px;
+    }
+
+    .imagen-card {
+        height: 250px;
+    }
+
+    .donacion-cuerpo {
+        padding: 15px;
+    }
+
+    .titulo-donacion-card {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .texto-donacion-card {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    /* Botones de Donación */
+    .boton-paypal,
+    .boton-wompi,
+    .boton-whatsapp {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+
+    /* Mensaje de Impacto */
+    .impact-message {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .close {
+        font-size: 30px;
+    }
+
+    .modal-message {
+        font-size: 20px;
+    }
+
+    .impact-message .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .impact-message .card-text {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .impact-message p {
+        font-size: 1rem;
+    }
+
+    .registro-card {
+        max-width: 400px;
+        margin: 40px 0;
+    }
+
+    .registro-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .registro-texto {
+        font-size: 0.875rem;
+        margin-bottom: 15px;
+    }
+
+    .button-retorno {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+
+    .politica-section,
+    .terminos-section {
+        padding: 30px;
+    }
+
+    .politica-titulo,
+    .terminos-titulo {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .item-politica,
+    .item-terminos {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .item-parrafo {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .item-politica-lista li,
+    .item-terminos-lista li {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .boton-politica,
+    .boton-aviso {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .evento-seccion {
+        padding: 30px 0;
+    }
+
+    .breadcrumb {
+        font-size: 16px;
+    }
+
+    .evento-titulo {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .evento-meta {
+        font-size: 0.8rem;
+    }
+
+    .descripcion-evento {
+        font-size: 1rem;
+    }
+
+    .btn-social {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin: 8px 8px;
+    }
+
+}
+
+/* Media queries para pantallas de 576px */
+@media (max-width: 576px) {
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .swiper {
+        height: 400px;
+    }
+
+    .swiper .slide-text {
+        bottom: 30%;
+        padding: 10px;
+    }
+
+    .swiper-slide video {
+        height: 400px;
+    }
+
+    .hastag-seccion h1,
+    .swiper .slide-text h2 {
+        font-size: 5vw;
+    }
+
+    .swiper .slide-text p {
+        font-size: 3vw;
+    }
+
+    .social-redes {
+        top: 40%;
+    }
+
+    .redes-sociales-boton {
+        width: 30px;
+        height: 30px;
+    }
+
+    .redes-sociales-logo {
+        font-size: 16px;
+    }
+
+    .footer-titulo {
+        font-size: 16px;
+    }
+
+    .footer-subtitulo,
+    .footer-enlace,
+    .footer-contenido {
+        font-size: 12px;
+    }
+
+    .footer-derechos {
+        font-size: 8px;
+    }
+
+    .donacion-flotante-boton {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .donacion-flotante-boton:hover {
+        font-size: 13px;
+    }
+
+    .donacion-flotante-icono {
+        font-size: 11px;
+    }
+
+    .scroll-arrow .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .scroll-arrow i {
+        font-size: 20px;
+    }
+
+    .translate #translate-option,
+    .discapacidad #accessibility-button {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .discapacidad #accessibility-button i {
+        font-size: 16px;
+    }
+
+    .accessibility-panel {
+        right: -200px;
+        width: 190px;
+    }
+
+    .discapacidad .accessibility-panel button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .discapacidad .accessibility-panel button i {
+        font-size: 8px;
+    }
+
+    .discapacidad .accessibility-panel button span {
+        font-size: 8px;
+    }
+
+    .translate .translate-option img {
+        width: 14px;
+    }
+
+    .donacion-info-titulo,
+    .contacto-info-titulo,
+    .galeria-titulo,
+    .conocenos-subtitulo,
+    .donacion-titulo,
+    .impacto-titulo,
+    .informacion-titulo {
+        font-size: 18px;
+    }
+
+    .contact-info-parrafo,
+    .galeria-subtitulo,
+    .conocenos-valores-subtitulo,
+    .conocenos-texto,
+    .donacion-subtitulo,
+    .impacto-subtitulo,
+    .informacion-parrafo {
+        font-size: 12px;
+    }
+
+    .boton-informacion {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .boton-informacion:hover {
+        font-size: 13px;
+    }
+
+    .impacto-icono {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .impacto-counter {
+        font-size: 18px;
+    }
+
+    .conocenos-valores-titulo,
+    .impacto-texto-icono {
+        font-size: 10px;
+    }
+
+    .boton-donacion {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .boton-donacion:hover {
+        font-size: 13px;
+    }
+
+    .icono-donacion {
+        font-size: 10px;
+    }
+
+    .noticias-imagenes {
+        min-height: 200px;
+    }
+
+    .noticias-titulo-seccion {
+        font-size: 18px;
+    }
+
+    .noticias-titulo {
+        font-size: 12px;
+    }
+
+    .boton-noticias {
+        font-size: 8px;
+        padding: 4px;
+    }
+
+    .boton-noticias:hover {
+        font-size: 10px;
+    }
+
+    .noticias-seccion .text-body-secondary {
+        bottom: 15px;
+    }
+
+    .noticias-seccion .card-body {
+        min-height: 140px;
+    }
+
+    .texto-noticia {
+        font-size: 10px;
+    }
+
+    .noticia-carta {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Estilos para la sección de Video */
+    #video-container {
+        margin-bottom: 1.5rem;
+    }
+
+    #video-container video {
+        border-radius: 20px;
+    }
+
+    /* Estilos para la seccion de conocenos */
+    .contacto-titulo,
+    .blog-titulo,
+    .proyecto-titulo,
+    .conocenos-titulo {
+        font-size: 18px;
+        margin: 1rem 0;
+    }
+
+    .contacto-descriptivo,
+    .blog-subtitulo,
+    .proyecto-descriptivo,
+    .conocenos-descriptivo {
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+
+    /* Estilos para la seccion de Valores Corporativos */
+    .conocenos-icon {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .conocenos-icon:hover {
+        font-size: 30px;
+    }
+
+    /* Estilos para la sección del equipo */
+    .equipo-subtitulo {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .equipo-nombre {
+        font-size: 12px;
+    }
+
+    .equipo-img {
+        max-width: 50%;
+        height: 120px;
+        border: 3px solid #5f72d9;
+    }
+
+    .equipo-img:hover {
+        transform: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .equipo-cargo {
+        font-size: 12px;
+    }
+
+    /* Estilos para la seccion de Galeria */
+    .titulo-galeria {
+        font-size: 16px;
+    }
+
+    .imagen-galeria {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Estilos para la seccion de Testimonios */
+    .testimonio-titulo {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+
+    .testimonial-img {
+        width: 120px;
+        height: 180px;
+        border-radius: 30px 0 30px;
+        margin-bottom: 10px;
+        border: 3px solid #ff0000;
+    }
+
+    .testimonial-text {
+        font-size: 12px;
+        margin-top: 1rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-author {
+        font-size: 12px;
+    }
+
+    /* Estilos para la seccion de Blog */
+    #noticias-container {
+        padding: 10px 0;
+    }
+
+    .filtro-titulo {
+        font-size: 16px;
+    }
+
+    .filtro {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .blog-card {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog-espaciado {
+        margin-bottom: 10px;
+    }
+
+    .blog-card .card-img-top {
+        height: 200px;
+    }
+
+    .cuerpo-card {
+        padding: 10px;
+    }
+
+    .titulo-card {
+        font-size: 16px;
+    }
+
+    .texto-card {
+        font-size: 12px;
+        height: 60px;
+    }
+
+    .blog-categoria {
+        font-size: 12px;
+    }
+
+    .leer-noticia {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .blog-fecha {
+        font-size: 10px;
+    }
+
+    /* Estilos para la seccion de Contacto Informacion */
+    .contact-info-parrafo a {
+        font-size: 12px;
+    }
+
+    .contact-info-parrafo i {
+        font-size: 12px;
+    }
+
+    /* Estilos para la seccion Donación */
+    .donacion-lista,
+    .donacion-info-parrafo {
+        font-size: 12px;
+    }
+
+    .donacion-lista li {
+        margin-bottom: 6px;
+    }
+
+    .boton-donacion-contacto {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    #frase-celebre {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    /* Estilos para la seccion de Formulario */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .formulario-titulo {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form label {
+        font-size: 12px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contact-form textarea {
+        height: 60px;
+    }
+
+    .contact-form .form-check-label {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    /* Sección de Realizar Donación */
+    .realizar-donacion-section {
+        padding: 30px 0;
+    }
+
+    .donacion-titulo-pagina {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .donacion-titulo-pagina+p {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Tarjetas de Donación */
+    .donacion-card {
+        max-width: 200px;
+        min-height: 200px;
+    }
+
+    .imagen-card {
+        height: 200px;
+    }
+
+    .donacion-cuerpo {
+        padding: 10px;
+    }
+
+    .titulo-donacion-card {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .texto-donacion-card {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    /* Botones de Donación */
+    .boton-paypal,
+    .boton-wompi,
+    .boton-whatsapp {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    /* Mensaje de Impacto */
+    .impact-message {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .impact-message .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 6px;
+    }
+
+    .impact-message .card-text {
+        font-size: 0.875rem;
+        margin-bottom: 10px;
+    }
+
+    .impact-message p {
+        font-size: 0.875rem;
+    }
+
+    .modal-content {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .close {
+        font-size: 28px;
+    }
+
+    .modal-message {
+        font-size: 18px;
+    }
+
+    .registro-card {
+        max-width: 300px;
+        margin: 30px 0;
+    }
+
+    .registro-titulo {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .registro-texto {
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+    }
+
+    .button-retorno {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .politica-section,
+    .terminos-section {
+        padding: 35px;
+    }
+
+    .politica-titulo,
+    .terminos-titulo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .item-politica,
+    .item-terminos {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .item-parrafo {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    .item-politica-lista li,
+    .item-terminos-lista li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .boton-politica,
+    .boton-aviso {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .evento-seccion .row {
+        padding: 20px 30px;
+    }
+
+    .evento-titulo {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+
+    .evento-meta {
+        font-size: 0.7rem;
+    }
+
+    .descripcion-evento {
+        font-size: 0.9rem;
+    }
+
+    .btn-social {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        margin: 6px 6px;
+    }
+
+}
