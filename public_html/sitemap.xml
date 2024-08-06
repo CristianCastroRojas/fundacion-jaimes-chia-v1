@@ -10,7 +10,7 @@
 <url>
   <loc>https://fundacionjaimeschia.org/</loc>
   <priority>1.0</priority>
-  <lastmod>2024-07-12</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>daily</changefreq>
   <image:image>
     <image:loc>http://fundacionjaimeschia.org/assets/images/Inicio/Niños_Jugando_Pelotas.jpg</image:loc>
@@ -27,7 +27,7 @@
 <url>
   <loc>https://fundacionjaimeschia.org/conocenos</loc>
   <priority>0.9</priority>
-  <lastmod>2024-07-06</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>weekly</changefreq>
   <image:image>
     <image:loc>http://fundacionjaimeschia.org/assets/images/conocenos/Niños_Jugando_Confeti.jpg</image:loc>
@@ -44,28 +44,28 @@
 <url>
   <loc>https://fundacionjaimeschia.org/nuestrosproyectos</loc>
   <priority>0.9</priority>
-  <lastmod>2024-07-06</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://fundacionjaimeschia.org/blog</loc>
   <priority>0.8</priority>
-  <lastmod>2024-07-08</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>daily</changefreq>
 </url>
 
 <url>
   <loc>https://fundacionjaimeschia.org/contacto</loc>
   <priority>0.7</priority>
-  <lastmod>2024-07-06</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
   <loc>https://fundacionjaimeschia.org/realizar_donativos</loc>
   <priority>0.7</priority>
-  <lastmod>2024-07-06</lastmod>
+  <lastmod>2024-08-05</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 

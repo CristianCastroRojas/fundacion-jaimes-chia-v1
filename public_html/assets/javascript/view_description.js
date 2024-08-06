@@ -28,4 +28,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Boton de cargar mas noticias
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("noticias-container");
+  const botonCargarMas = document.getElementById("cargar-mas");
 
+  // Selecciona todas las noticias
+  const todasLasNoticias = Array.from(container.querySelectorAll(".col-sm-12"));
+
+  // Número de noticias a mostrar inicialmente
+  const noticiasPorPagina = 4;
+  let indexActual = 0;
+
+  function mostrarNoticias() {
+    // Mostrar un número específico de noticias
+    const noticiasAmostrar = todasLasNoticias.slice(
+      indexActual,
+      indexActual + noticiasPorPagina
+    );
+    noticiasAmostrar.forEach((noticia) => (noticia.style.display = "block"));
+    indexActual += noticiasPorPagina;
+
+    // Oculta el botón si ya no hay más noticias para mostrar
+    if (indexActual >= todasLasNoticias.length) {
+      botonCargarMas.style.display = "none";
+    }
+  }
+
+  // Inicialmente, oculta todas las noticias
+  todasLasNoticias.forEach((noticia) => (noticia.style.display = "none"));
+
+  // Muestra las primeras noticias al cargar
+  mostrarNoticias();
+
+  // Agrega el evento click al botón
+  botonCargarMas.addEventListener("click", mostrarNoticias);
+});

@@ -592,6 +592,7 @@ body {
   height: auto;
   border-radius: 30px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .donacion-info-titulo,
@@ -723,6 +724,7 @@ body {
   border-top-right-radius: 30px;
   max-width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 .noticias-seccion .card-body {
