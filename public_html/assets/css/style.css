@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-html,
-body {
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
   width: 100%;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -595,6 +600,14 @@ body {
   object-fit: cover;
 }
 
+.video-conocenos{
+  width: 100%; /* Asegura que el video ocupe el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto del video */
+  object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsionarlo */
+  border-radius: 30px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
 .donacion-info-titulo,
 .contacto-info-titulo,
 .galeria-titulo,
@@ -890,8 +903,10 @@ body {
 }
 
 .equipo-img {
-  max-width: 70%;
-  height: 200px;
+  width: 60%;
+  object-fit: cover;
+  height: auto;
+  max-width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-right: 5px;
   border-radius: 50%;
